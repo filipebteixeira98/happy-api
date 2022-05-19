@@ -34,7 +34,7 @@ app.post('/orphanages', async (request, response) => {
 
   await orphanagesRepository.save(orphanage);
 
-  return response.status(201).json(orphanage);
+  return response.json(orphanage);
 });
 
 app.listen(3333, () => {
